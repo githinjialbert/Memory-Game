@@ -1,0 +1,33 @@
+body {
+    background-size: cover;
+    background: #e6d00a;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    background: rgba(18, 121, 189, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+#board {
+    width: 1000px; 
+    height: 600px; 
+    background-color: #ADD8E6;
+    border: 5px solid #708090;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+#board img {
+    width: 80px;
+    height: 80px; 
+    object-fit: cover;
+}
