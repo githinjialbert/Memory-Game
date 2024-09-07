@@ -2,12 +2,13 @@ body {
     background-size: cover;
     background: #e6d00a;
     height: 100vh;
-    margin: 0;
+    margin: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
+
 .container {
     background: rgba(18, 121, 189, 0.6);
     padding: 20px;
@@ -15,19 +16,21 @@ body {
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
+
 #board {
-    width: 1000px; 
-    height: 600px; 
+    width: 1000px;
+    height: 660px;
     background-color: #ADD8E6;
     border: 5px solid #708090;
     border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
-    position: relative;
 }
+
 #board img {
-    width: 80px;
-    height: 80px; 
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
