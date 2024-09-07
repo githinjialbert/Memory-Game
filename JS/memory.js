@@ -1,4 +1,4 @@
-const cards = ["1up", "blueshell", "bobomb", "bulletbill", "coin", "goomba", "luigi", "mario", "mushroom", "peach", "question", "star", "thwomp", "wario"];
+const cards = ["1up", "blueshell", "bobomb", "bulletbill", "coin", "goomba", "mario", "mushroom", "peach", "question", "star", "thwomp", "wario"];
 const rows = 6;
 const columns = 4;
 let flippedCards = [];
@@ -54,7 +54,11 @@ const checkForMatch = () => {
     console.log(`Checking match: ${firstCard.dataset.value} vs ${secondCard.dataset.value}`);
 
     if (firstCard.dataset.value === secondCard.dataset.value) {
-        flippedCards = [];
+        setTimeout(() => {
+            firstCard.remove();
+            secondCard.remove();
+            flippedCards = [];
+        }, 500);
     } else {
         setTimeout(() => {
             firstCard.classList.remove("flipped");
